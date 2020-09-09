@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp">
+
+    <TextView
+        android:id="@+id/tv_num"
+        android:textColor="@color/color_FFFFFF"
+        android:gravity="center"
+        android:text="序号"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:textColor="@color/color_FFFFFF"
+        android:gravity="center"
+        android:text="名称"
+        android:layout_weight="4"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:id="@+id/tv_requiredVal"
+        android:textColor="@color/color_FFFFFF"
+        android:gravity="center"
+        android:text="要求值"
+        android:layout_weight="4"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/tv_testVal"
+        android:textColor="@color/color_FFFFFF"
+        android:gravity="center"
+        android:text="测试值"
+        android:layout_weight="4"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:textColor="@color/color_FFFFFF"
+        android:id="@+id/tv_description"
+        android:gravity="center"
+        android:text="备注"
+        android:layout_weight="4"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

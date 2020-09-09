@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_2B2B2B"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="24dp"
+                android:background="@drawable/shape_ed2"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="24dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="甲方检查结论"
+                        android:textColor="@color/color_FFFFFF" />
+
+                    <EditText
+                        android:textColor="@color/color_FFFFFF"
+                        android:cursorVisible="true"
+                        android:textCursorDrawable="@null"
+                        android:id="@+id/et_conclusion"
+                        android:layout_width="700dp"
+                        android:layout_height="90dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/shape_edtext"
+                        android:gravity="top"
+                        android:paddingLeft="10dp"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="24dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="甲方检查人签名"
+                        android:textColor="@color/color_FFFFFF" />
+
+                    <ImageView
+                        android:id="@+id/iv_checkPerson2"
+                        android:layout_width="300dp"
+                        android:layout_height="90dp"
+                        android:layout_marginLeft="16dp"
+                        android:background="@drawable/shape_edtext"
+                        android:scaleType="fitXY" />
+                    <ImageView
+                        android:visibility="gone"
+                        android:background="@drawable/del"
+                        android:layout_marginLeft="-15dp"
+                        android:scaleType="fitXY"
+                        android:id="@+id/iv_XX"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:textColorHint="@color/color_FFFFFF"
+                    android:cursorVisible="true"
+                    android:textCursorDrawable="@null"
+                    android:background="@drawable/shape_edtext"
+                    android:id="@+id/tv_signature"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="150dp"
+                    android:textColor="@color/color_FFFFFF"
+                    android:hint="请验收人签字"
+                    android:layout_width="200dp"
+                    android:layout_height="36dp"/>
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="24dp">
+
+                    <TextView
+                        android:layout_marginLeft="75dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="日期："
+                        android:textColor="@color/color_FFFFFF" />
+
+                    <TextView
+                        android:gravity="center_vertical"
+                        android:id="@+id/tv_time"
+                        android:background="@drawable/shape_edtext"
+                        android:layout_width="400dp"
+                        android:layout_height="40dp"
+                        android:text=""
+                        android:textColor="@color/color_FFFFFF" />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

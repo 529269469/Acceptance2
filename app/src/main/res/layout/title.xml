@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/color_474747"
+    android:orientation="horizontal">
+
+    <TextView
+        android:paddingLeft="60dp"
+        android:paddingRight="10dp"
+        android:gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:textColor="@color/color_333333"
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

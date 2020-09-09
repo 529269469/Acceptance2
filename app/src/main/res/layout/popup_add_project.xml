@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0" />
+
+
+    <LinearLayout
+        android:layout_width="500dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:background="@color/color_2B2B2B"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@color/color_tab"
+            android:orientation="vertical">
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tv_popup_quxiao"
+                android:layout_centerVertical="true"
+                android:textColor="@color/color_del"
+                android:gravity="center"
+                android:paddingLeft="24dp"
+                android:text="取消"
+                android:layout_width="60dp"
+                android:layout_height="30dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="添加交付项目分类"
+                android:textColor="@color/color_FFFFFF"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/tv_popup_save"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:paddingRight="24dp"
+                android:text="保存"
+                android:textColor="@color/color_save" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="项目分类"
+                        android:textColor="@color/color_FFFFFF" />
+
+                    <EditText
+                        android:id="@+id/et_project"
+                        android:layout_width="200dp"
+                        android:layout_height="36dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/shape_edtext"
+                        android:cursorVisible="true"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/color_FFFFFF"
+                        android:textCursorDrawable="@null"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="项目名称"
+                        android:textColor="@color/color_FFFFFF" />
+
+                    <EditText
+                        android:id="@+id/et_name"
+                        android:layout_width="200dp"
+                        android:layout_height="36dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/shape_edtext"
+                        android:cursorVisible="true"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/color_FFFFFF"
+                        android:textCursorDrawable="@null"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="     排序号"
+                        android:textColor="@color/color_FFFFFF" />
+
+                    <EditText
+                        android:id="@+id/et_sort"
+                        android:layout_width="200dp"
+                        android:layout_height="36dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/shape_edtext"
+                        android:cursorVisible="true"
+                        android:gravity="center_vertical"
+                        android:numeric="integer"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/color_FFFFFF"
+                        android:textCursorDrawable="@null"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="交付类别"
+                        android:textColor="@color/color_FFFFFF" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_project"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:textColor="@color/color_FFFFFF"
+                            android:id="@+id/rb_manage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="管理" />
+
+                        <RadioButton
+                            android:textColor="@color/color_FFFFFF"
+                            android:id="@+id/rb_technology"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:text="技术" />
+
+                        <RadioButton
+                            android:textColor="@color/color_FFFFFF"
+                            android:id="@+id/rb_else"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:text="其他" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

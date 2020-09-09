@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/drawerLayout"
+    android:background="@color/color_2B2B2B"
+    tools:context=".ui.activity.main.UPActivity">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/color_tab">
+
+            <ImageView
+                android:id="@+id/iv_genduo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="8dp"
+                android:src="@drawable/left" />
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iv_genduo"
+                android:textSize="20sp"
+                android:id="@+id/tv_tuichu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="外部储存"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_marginTop="44dp"
+            android:id="@+id/frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/help_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@color/color_99000000"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <androidx.core.widget.ContentLoadingProgressBar
+                android:layout_centerInParent="true"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                style="?android:attr/progressBarStyleSmall"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:background="@color/color_2B2B2B"
+        android:layout_gravity="left"
+        android:id="@+id/ll_title"
+        android:orientation="vertical"
+        android:layout_width="400dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:textSize="20sp"
+            android:textColor="@color/color_FFFFFF"
+            android:gravity="center"
+            android:text="储存"
+            android:background="@color/color_tab"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"/>
+
+
+        <ListView
+            android:layout_marginTop="44dp"
+            android:id="@+id/gv_one"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    </RelativeLayout>
+
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

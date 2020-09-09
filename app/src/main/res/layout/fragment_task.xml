@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_2B2B2B">
+
+    <LinearLayout
+        android:layout_margin="24dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:visibility="visible"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:background="@drawable/shape_ed2"
+            android:layout_width="match_parent"
+            android:layout_height="42dp">
+
+            <TextView
+                android:id="@+id/tv_code"
+                android:layout_marginLeft="22dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="编号："
+                android:textColor="@color/color_FFFFFF" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="77dp"
+                android:text="名称："
+                android:textColor="@color/color_FFFFFF" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:focusable="true"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/shape_ed2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_marginBottom="24dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="30dp"
+                android:layout_marginTop="24dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="        签发人"
+                            android:textColor="@color/color_FFFFFF" />
+
+                        <EditText
+                            android:cursorVisible="true"
+                            android:textCursorDrawable="@null"
+                            android:textSize="14sp"
+                            android:id="@+id/tv_issuer"
+                            android:layout_width="300dp"
+                            android:layout_height="36dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/shape_edtext"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/color_FFFFFF" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:layout_marginTop="24dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="产品接收人"
+                            android:textColor="@color/color_FFFFFF" />
+
+                        <EditText
+                            android:cursorVisible="true"
+                            android:textCursorDrawable="@null"
+                            android:textSize="14sp"
+                            android:id="@+id/tv_accepter"
+                            android:layout_width="300dp"
+                            android:layout_height="36dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/shape_edtext"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/color_FFFFFF" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:layout_marginTop="24dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="    申请单位"
+                            android:textColor="@color/color_FFFFFF" />
+
+                        <EditText
+                            android:cursorVisible="true"
+                            android:textCursorDrawable="@null"
+                            android:textSize="14sp"
+                            android:id="@+id/tv_applyCompany"
+                            android:layout_width="300dp"
+                            android:layout_height="36dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/shape_edtext"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/color_FFFFFF" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:layout_marginTop="24dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="    联系电话"
+                            android:textColor="@color/color_FFFFFF" />
+
+                        <EditText
+                            android:inputType="number|numberDecimal"
+                            android:cursorVisible="true"
+                            android:textCursorDrawable="@null"
+                            android:textSize="14sp"
+                            android:id="@+id/tv_phone"
+                            android:layout_width="300dp"
+                            android:layout_height="36dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/shape_edtext"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/color_FFFFFF" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="30dp"
+                android:paddingTop="30dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="        签发部门"
+                            android:textColor="@color/color_FFFFFF" />
+
+                        <EditText
+                            android:cursorVisible="true"
+                            android:textCursorDrawable="@null"
+                            android:textSize="14sp"
+                            android:id="@+id/tv_issueDept"
+                            android:layout_width="300dp"
+                            android:layout_height="36dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/shape_edtext"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/color_FFFFFF" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:layout_marginTop="24dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="产品接收时间"
+                            android:textColor="@color/color_FFFFFF" />
+
+                        <TextView
+                            android:cursorVisible="true"
+                            android:textCursorDrawable="@null"
+                            android:textSize="14sp"
+                            android:id="@+id/tv_acceptDate"
+                            android:layout_width="300dp"
+                            android:layout_height="36dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/shape_edtext"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/color_FFFFFF" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:layout_marginTop="24dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="            申请人"
+                            android:textColor="@color/color_FFFFFF" />
+
+                        <EditText
+                            android:cursorVisible="true"
+                            android:textCursorDrawable="@null"
+                            android:textSize="14sp"
+                            android:id="@+id/tv_applicant"
+                            android:layout_width="300dp"
+                            android:layout_height="36dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/shape_edtext"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/color_FFFFFF" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:layout_marginTop="24dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="        验收时间"
+                            android:textColor="@color/color_FFFFFF" />
+
+                        <TextView
+                            android:cursorVisible="true"
+                            android:textCursorDrawable="@null"
+                            android:textSize="14sp"
+                            android:id="@+id/tv_checkDate"
+                            android:layout_width="300dp"
+                            android:layout_height="36dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/shape_edtext"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/color_FFFFFF" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_save"
+            android:gravity="center"
+            android:textColor="@color/color_FFFFFF"
+            android:text="保存"
+            android:background="@drawable/shape_text2"
+            android:layout_gravity="right"
+            android:layout_width="60dp"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_add"
+            android:gravity="center"
+            android:background="@drawable/shape_text"
+            android:text="验收任务"
+            android:textColor="@color/color_5398F7"
+            android:layout_width="100dp"
+            android:layout_height="30dp"/>
+
+        <LinearLayout
+            android:background="@color/color_3C3F41"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:textSize="12sp"
+                android:textColor="@color/color_FFFFFF"
+                android:text="序号"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:textSize="12sp"
+                android:textColor="@color/color_FFFFFF"
+                android:text="产品代号"
+                android:gravity="center"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:textSize="12sp"
+                android:textColor="@color/color_FFFFFF"
+                android:text="产品名称"
+                android:gravity="center"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:textSize="12sp"
+                android:textColor="@color/color_FFFFFF"
+                android:text="产品编号"
+                android:gravity="center"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:textSize="12sp"
+                android:textColor="@color/color_FFFFFF"
+                android:text="产品状态"
+                android:gravity="center"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:textSize="12sp"
+                android:textColor="@color/color_FFFFFF"
+                android:text="投产数量/已验收数量/验收数量"
+                android:gravity="center"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+
+            <TextView
+                android:textSize="12sp"
+                android:textColor="@color/color_FFFFFF"
+                android:text="是否\n终检"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+
+            <TextView
+                android:textSize="12sp"
+                android:textColor="@color/color_FFFFFF"
+                android:text="是否\n军检"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:textSize="12sp"
+                android:textColor="@color/color_FFFFFF"
+                android:text="筛选试验\n是否完成"
+                android:gravity="center"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:textSize="12sp"
+                android:textColor="@color/color_FFFFFF"
+                android:text="例行试验\n是否完成"
+                android:gravity="center"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+
+            <TextView
+                android:textSize="12sp"
+                android:textColor="@color/color_FFFFFF"
+                android:text="是否具备\n出厂交付条件"
+                android:gravity="center"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:textSize="12sp"
+                android:textColor="@color/color_FFFFFF"
+                android:text="备注"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <com.example.acceptance2.view.MyListView
+            android:id="@+id/lv_list"
+            android:background="@drawable/shape_ed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:visibility="gone"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:background="@drawable/shape_text"
+            android:text="验收部门(本栏由验收单位完成数据包审批流程后自动填写)"
+            android:textColor="@color/color_5398F7"
+            android:layout_width="450dp"
+            android:layout_height="30dp"/>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:background="@color/color_3C3F41"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:textColor="@color/color_FFFFFF"
+                android:gravity="center"
+                android:text="序号"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:textColor="@color/color_FFFFFF"
+                android:gravity="center"
+                android:text="验收部门"
+                android:layout_weight="4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:textColor="@color/color_FFFFFF"
+                android:gravity="center"
+                android:text="验收人"
+                android:layout_weight="6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <com.example.acceptance2.view.MyListView
+            android:layout_marginBottom="100dp"
+            android:id="@+id/lv_list2"
+            android:background="@drawable/shape_ed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</ScrollView>

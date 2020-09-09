@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/tv_num"
+            android:gravity="center"
+            android:textColor="@color/color_FFFFFF"
+            android:text=""
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/tv_productCode"
+            android:gravity="center"
+            android:textColor="@color/color_FFFFFF"
+            android:text=""
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/tv_question"
+            android:gravity="center"
+            android:textColor="@color/color_FFFFFF"
+            android:text=""
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:layout_marginRight="24dp"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_no"
+                android:gravity="center"
+                android:textColor="@color/color_D0D0D0"
+                android:text="不通过"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+            <Switch
+                android:textOn=""
+                android:textOff=""
+                android:showText="true"
+                android:id="@+id/tv_confirmer"
+                android:gravity="center"
+                android:textColor="@color/color_FFFFFF"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/tv_yes"
+                android:gravity="center"
+                android:textColor="@color/color_D0D0D0"
+                android:text="通过"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_2B2B2B"
+    tools:context=".ui.MainActivity">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:orientation="vertical"
+        android:id="@+id/drawerlayout_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@color/color_tab">
+
+                <ImageView
+                    android:id="@+id/iv_genduo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="8dp"
+                    android:src="@drawable/genduo" />
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv_genduo"
+                    android:textSize="20sp"
+                    android:id="@+id/tv_tuichu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="50dp"
+                    android:id="@+id/tv_operation"
+                    android:gravity="center"
+                    android:textColor="@color/color_FFFFFF"
+                    android:text="操作"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+
+                <ImageView
+                    android:layout_marginRight="3dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/tv_operation"
+                    android:src="@drawable/caozuo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+
+            <FrameLayout
+                android:id="@+id/frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/help_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@color/color_99000000"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <androidx.core.widget.ContentLoadingProgressBar
+                android:layout_centerInParent="true"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                style="?android:attr/progressBarStyleSmall"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_gravity="left"
+        android:id="@+id/ll_title"
+        android:orientation="vertical"
+        android:layout_width="400dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:textSize="20sp"
+            android:textColor="@color/color_FFFFFF"
+            android:gravity="center"
+            android:text="菜单"
+            android:background="#212D4D"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"/>
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:id="@+id/tv_add"
+            android:textSize="20sp"
+            android:textColor="@color/color_FFFFFF"
+            android:gravity="center"
+            android:text="添加检查单"
+            android:background="#212D4D"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"/>
+
+        <ListView
+            android:layout_above="@id/tv_add"
+            android:layout_marginTop="44dp"
+            android:background="@color/color_FFFFFF"
+            android:id="@+id/gv_one"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+
+    </RelativeLayout>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.example.acceptance2.view.WaterMarkText
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <com.example.acceptance2.view.WaterMarkText
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="650dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <com.example.acceptance2.view.WaterMarkText
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="200dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <com.example.acceptance2.view.WaterMarkText
+            android:layout_marginLeft="650dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+</FrameLayout>

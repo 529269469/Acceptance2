@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_2B2B2B"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:visibility="visible"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:background="@color/color_474747"
+        android:layout_width="match_parent"
+        android:layout_height="42dp">
+
+        <TextView
+            android:id="@+id/tv_code"
+            android:layout_marginLeft="22dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="编号："
+            android:textColor="@color/color_FFFFFF" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="77dp"
+            android:text="名称："
+            android:textColor="@color/color_FFFFFF" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/color_3C3F41"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:src="@drawable/add"
+            android:id="@+id/tv_add"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:gravity="center" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:gravity="center_vertical"
+            android:id="@+id/re_tb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_vp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
