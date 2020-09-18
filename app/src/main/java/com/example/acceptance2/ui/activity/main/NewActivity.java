@@ -199,24 +199,28 @@ public class NewActivity extends BaseActivity implements View.OnClickListener {
                     }
                 }
                 File[] subFile = files.listFiles();
-                for (int i = 0; i < subFile.length; i++) {
-                    if (!subFile[i].exists() || subFile[i].length() == 0) {
-                        ToastUtils.getInstance().showTextToast(this, "模板错误");
-                        return;
+                if (subFile!=null){
+                    for (int i = 0; i < subFile.length; i++) {
+                        if (!subFile[i].exists() || subFile[i].length() == 0) {
+                            ToastUtils.getInstance().showTextToast(this, "模板错误");
+                            return;
+                        }
+                        String filename = subFile[i].getName();
+                        File file = new File(filename);
+                        /* 取得扩展名 */
+                        String end = file.getName().substring(file.getName().lastIndexOf(".") + 1, file.getName().length()).toLowerCase(Locale.getDefault());
+                        if (end.equals("zip")) {
+                            list.add(new PackageBean(filename, subFile[i] + ""));
+                        }
                     }
-                    String filename = subFile[i].getName();
-                    File file = new File(filename);
-                    /* 取得扩展名 */
-                    String end = file.getName().substring(file.getName().lastIndexOf(".") + 1, file.getName().length()).toLowerCase(Locale.getDefault());
-                    if (end.equals("zip")) {
-                        list.add(new PackageBean(filename, subFile[i] + ""));
+                    String[] productCode = new String[list.size()];
+                    for (int i = 0; i < productCode.length; i++) {
+                        productCode[i] = list.get(i).getName();
                     }
+                    setDialog(tvMoban, productCode, "请选择模板：");
+                }else {
+                    ToastUtils.getInstance().showTextToast(this,"你没有模板，请先导入模板");
                 }
-                String[] productCode = new String[list.size()];
-                for (int i = 0; i < productCode.length; i++) {
-                    productCode[i] = list.get(i).getName();
-                }
-                setDialog(tvMoban, productCode, "请选择模板：");
                 break;
             case R.id.bt_yes:
                 newisPkg();
